@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C28BE4F1474B27200C21854 /* SQL.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1C28BE4E1474B27200C21854 /* SQL.sqlite */; };
+		1C28BE601474B49900C21854 /* Wallpaper_Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C28BE5F1474B49900C21854 /* Wallpaper_Landscape.png */; };
+		1C572D7D143247AD001983AF /* 972343.hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C572D7C143247AD001983AF /* 972343.hand.png */; };
+		1C572D96143257CB001983AF /* coinreturn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C572D95143257CB001983AF /* coinreturn.jpg */; };
+		1CA18A5E148F0D7700E3F82C /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 1CA18A5D148F0D7700E3F82C /* DS-DIGI.TTF */; };
+		1CAE989B1472C33000608FBD /* actbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE98951472C33000608FBD /* actbutton.png */; };
+		1CAE989F1472C33000608FBD /* display.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE98991472C33000608FBD /* display.png */; };
+		1CAE98A01472C33000608FBD /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE989A1472C33000608FBD /* return.png */; };
+		1CAE98A21472C35400608FBD /* shelf_wood_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE98A11472C35400608FBD /* shelf_wood_landscape.png */; };
+		1CAE98A41472C37000608FBD /* light-wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE98A31472C37000608FBD /* light-wood.jpg */; };
+		1CAE98A61472C37E00608FBD /* itembackwood.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE98A51472C37E00608FBD /* itembackwood.png */; };
+		1CAE98BB1472C6CC00608FBD /* cointitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE98BA1472C6CC00608FBD /* cointitle.png */; };
+		1CD7251E148C0626007F90C0 /* buy-it--lock-explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CD7251D148C0626007F90C0 /* buy-it--lock-explain.png */; };
+		1CD72520148C0632007F90C0 /* adminbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CD7251F148C0632007F90C0 /* adminbutton.png */; };
+		1CD72522148C063D007F90C0 /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CD72521148C063D007F90C0 /* playbutton.png */; };
+		1D3623260D0F684500981E51 /* IPAACAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* IPAACAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		E507FEBA12EDE17C004F0C8C /* ActivitySheetStudioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E507FE9912EDE17C004F0C8C /* ActivitySheetStudioTableViewController.m */; };
+		E507FEBB12EDE17C004F0C8C /* ActivitySheetStudioTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507FE9A12EDE17C004F0C8C /* ActivitySheetStudioTableViewController.xib */; };
+		E507FEBC12EDE17C004F0C8C /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E507FE9C12EDE17C004F0C8C /* AudioViewController.m */; };
+		E507FEBD12EDE17C004F0C8C /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507FE9D12EDE17C004F0C8C /* AudioViewController.xib */; };
+		E507FEBE12EDE17C004F0C8C /* CreateActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E507FE9F12EDE17C004F0C8C /* CreateActivityViewController.m */; };
+		E507FEC112EDE17C004F0C8C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E507FEA512EDE17C004F0C8C /* ImageViewController.m */; };
+		E507FEC212EDE17C004F0C8C /* ImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507FEA612EDE17C004F0C8C /* ImageViewController.xib */; };
+		E507FEC312EDE17C004F0C8C /* IPAACActivitySheetStudio.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507FEA712EDE17C004F0C8C /* IPAACActivitySheetStudio.xib */; };
+		E507FEC512EDE17C004F0C8C /* IPAACMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E507FEAB12EDE17C004F0C8C /* IPAACMainViewController.m */; };
+		E507FEC612EDE17C004F0C8C /* IPAACMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507FEAC12EDE17C004F0C8C /* IPAACMainViewController.xib */; };
+		E507FECD12EDE17C004F0C8C /* RecordingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E507FEB912EDE17C004F0C8C /* RecordingTestViewController.m */; };
+		E507FED612EDE235004F0C8C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E507FED512EDE235004F0C8C /* AudioToolbox.framework */; };
+		E507FED812EDE235004F0C8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E507FED712EDE235004F0C8C /* AVFoundation.framework */; };
+		E507FEDA12EDE235004F0C8C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E507FED912EDE235004F0C8C /* libsqlite3.0.dylib */; };
+		E507FEF312EDE2B3004F0C8C /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E507FEF112EDE2B3004F0C8C /* PDFViewController.m */; };
+		E507FEF412EDE2B3004F0C8C /* PDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507FEF212EDE2B3004F0C8C /* PDFViewController.xib */; };
+		E507FF8A12EDE374004F0C8C /* Add.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF7412EDE374004F0C8C /* Add.png */; };
+		E507FF8B12EDE374004F0C8C /* AddSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF7512EDE374004F0C8C /* AddSelected.png */; };
+		E507FF8C12EDE374004F0C8C /* blank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E507FF7612EDE374004F0C8C /* blank.jpg */; };
+		E507FF8F12EDE374004F0C8C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF7912EDE374004F0C8C /* icon.png */; };
+		E507FF9612EDE374004F0C8C /* Remove.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8012EDE374004F0C8C /* Remove.png */; };
+		E507FF9712EDE374004F0C8C /* RemoveSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8112EDE374004F0C8C /* RemoveSelected.png */; };
+		E507FF9C12EDE374004F0C8C /* unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8612EDE374004F0C8C /* unlock.png */; };
+		E507FF9D12EDE374004F0C8C /* blank.wav in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8812EDE374004F0C8C /* blank.wav */; };
+		E507FF9E12EDE374004F0C8C /* User Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8912EDE374004F0C8C /* User Manual.pdf */; };
+		E507FFB112EDE5E6004F0C8C /* RecordingTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507FFB012EDE5E6004F0C8C /* RecordingTestViewController.xib */; };
+		E50CBF83130E077100B40720 /* CoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E50CBF82130E077100B40720 /* CoinViewController.xib */; };
+		E50CBF88130E079500B40720 /* Coin.m in Sources */ = {isa = PBXBuildFile; fileRef = E50CBF85130E079500B40720 /* Coin.m */; };
+		E50CBF89130E079500B40720 /* CoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50CBF87130E079500B40720 /* CoinViewController.m */; };
+		E50CBF8F130E07CC00B40720 /* dimedemo.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CBF8B130E07CC00B40720 /* dimedemo.png */; };
+		E50CBF90130E07CC00B40720 /* nickeldemo.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CBF8C130E07CC00B40720 /* nickeldemo.png */; };
+		E50CBF91130E07CC00B40720 /* pennydemo.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CBF8D130E07CC00B40720 /* pennydemo.png */; };
+		E50CBF92130E07CC00B40720 /* quarterdemo.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CBF8E130E07CC00B40720 /* quarterdemo.png */; };
+		E50CBFA9130E093C00B40720 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = E50CBFA7130E093C00B40720 /* refresh.png */; };
+		E533FFCA13456D4100E8119B /* PlayCoinItemSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = E533FFC813456D4100E8119B /* PlayCoinItemSelect.m */; };
+		E533FFCB13456D4100E8119B /* PlayCoinItemSelect.xib in Resources */ = {isa = PBXBuildFile; fileRef = E533FFC913456D4100E8119B /* PlayCoinItemSelect.xib */; };
+		E5A95092132574EF00BF9978 /* frameArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A95091132574EF00BF9978 /* frameArray.m */; };
+		E5AD0467181B755E00D36B2D /* buy.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD045F181B755E00D36B2D /* buy.gif */; };
+		E5AD0468181B755E00D36B2D /* buydown.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0460181B755E00D36B2D /* buydown.gif */; };
+		E5AD0469181B755E00D36B2D /* contactus.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0461181B755E00D36B2D /* contactus.gif */; };
+		E5AD046A181B755E00D36B2D /* contactusdown.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0462181B755E00D36B2D /* contactusdown.gif */; };
+		E5AD046B181B755E00D36B2D /* create.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0463181B755E00D36B2D /* create.gif */; };
+		E5AD046C181B755E00D36B2D /* createdown.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0464181B755E00D36B2D /* createdown.gif */; };
+		E5AD046D181B755E00D36B2D /* website.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0465181B755E00D36B2D /* website.gif */; };
+		E5AD046E181B755E00D36B2D /* websitedown.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0466181B755E00D36B2D /* websitedown.gif */; };
+		E5B01DC412EE05BA008B3000 /* dimedemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DBC12EE05BA008B3000 /* dimedemo.jpg */; };
+		E5B01DC512EE05BA008B3000 /* dimedemo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DBD12EE05BA008B3000 /* dimedemo.wav */; };
+		E5B01DC612EE05BA008B3000 /* nickeldemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DBE12EE05BA008B3000 /* nickeldemo.jpg */; };
+		E5B01DC712EE05BA008B3000 /* nickeldemo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DBF12EE05BA008B3000 /* nickeldemo.wav */; };
+		E5B01DC812EE05BA008B3000 /* pennydemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DC012EE05BA008B3000 /* pennydemo.jpg */; };
+		E5B01DC912EE05BA008B3000 /* pennydemo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DC112EE05BA008B3000 /* pennydemo.wav */; };
+		E5B01DCA12EE05BA008B3000 /* quarterdemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DC212EE05BA008B3000 /* quarterdemo.jpg */; };
+		E5B01DCB12EE05BA008B3000 /* quarterdemo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DC312EE05BA008B3000 /* quarterdemo.wav */; };
+		E5EAF895133E72C600F12006 /* PlayCoinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAF88E133E72C600F12006 /* PlayCoinTableViewController.m */; };
+		E5EAF8A8133E797200F12006 /* PlayCoinTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EAF8A3133E797200F12006 /* PlayCoinTableViewController.xib */; };
+		E5EAF8DC133E7F5E00F12006 /* CoinSheetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAF8D4133E7F5E00F12006 /* CoinSheetTableViewController.m */; };
+		E5EAF8DD133E7F5E00F12006 /* CoinSheetTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EAF8D5133E7F5E00F12006 /* CoinSheetTableViewController.xib */; };
+		E5EAF92D133E891800F12006 /* CreateCoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAF925133E891800F12006 /* CreateCoinViewController.m */; };
+		E5EAF92E133E891800F12006 /* CreateCoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EAF926133E891800F12006 /* CreateCoinViewController.xib */; };
+		E5EEA2FE12EE01BD00C6DF2F /* CreateActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EEA2FB12EE01BC00C6DF2F /* CreateActivityViewController.xib */; };
+		E5EEA2FF12EE01BD00C6DF2F /* PlayActivitySheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EEA2FC12EE01BD00C6DF2F /* PlayActivitySheet.xib */; };
+		E5F455181491899C0013E1C6 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F4550F1491899C0013E1C6 /* car.png */; };
+		E5F455191491899C0013E1C6 /* cereal.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F455101491899C0013E1C6 /* cereal.png */; };
+		E5F4551A1491899C0013E1C6 /* crayon.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F455111491899C0013E1C6 /* crayon.png */; };
+		E5F4551B1491899C0013E1C6 /* drink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5F455121491899C0013E1C6 /* drink.jpg */; };
+		E5F4551D1491899C0013E1C6 /* shoe.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F455141491899C0013E1C6 /* shoe.png */; };
+		E5F4551E1491899C0013E1C6 /* snack.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F455151491899C0013E1C6 /* snack.png */; };
+		E5F4551F1491899C0013E1C6 /* tshirt.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F455161491899C0013E1C6 /* tshirt.png */; };
+		E5F455201491899C0013E1C6 /* balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F455171491899C0013E1C6 /* balloon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C28BE4E1474B27200C21854 /* SQL.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SQL.sqlite; sourceTree = "<group>"; };
+		1C28BE5F1474B49900C21854 /* Wallpaper_Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wallpaper_Landscape.png; sourceTree = "<group>"; };
+		1C572D7C143247AD001983AF /* 972343.hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 972343.hand.png; sourceTree = "<group>"; };
+		1C572D95143257CB001983AF /* coinreturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coinreturn.jpg; sourceTree = "<group>"; };
+		1CA18A5D148F0D7700E3F82C /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
+		1CAE98951472C33000608FBD /* actbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actbutton.png; sourceTree = "<group>"; };
+		1CAE98991472C33000608FBD /* display.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = display.png; sourceTree = "<group>"; };
+		1CAE989A1472C33000608FBD /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return.png; sourceTree = "<group>"; };
+		1CAE98A11472C35400608FBD /* shelf_wood_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf_wood_landscape.png; sourceTree = "<group>"; };
+		1CAE98A31472C37000608FBD /* light-wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "light-wood.jpg"; sourceTree = "<group>"; };
+		1CAE98A51472C37E00608FBD /* itembackwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itembackwood.png; sourceTree = "<group>"; };
+		1CAE98BA1472C6CC00608FBD /* cointitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cointitle.png; sourceTree = "<group>"; };
+		1CD7251D148C0626007F90C0 /* buy-it--lock-explain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buy-it--lock-explain.png"; sourceTree = "<group>"; };
+		1CD7251F148C0632007F90C0 /* adminbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adminbutton.png; sourceTree = "<group>"; };
+		1CD72521148C063D007F90C0 /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* IPAACAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPAACAppDelegate.h; path = Classes/IPAACAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* IPAACAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IPAACAppDelegate.m; path = Classes/IPAACAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* BUYit!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BUYit!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* BUYit!-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BUYit!-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		E507FE9812EDE17C004F0C8C /* ActivitySheetStudioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitySheetStudioTableViewController.h; sourceTree = "<group>"; };
+		E507FE9912EDE17C004F0C8C /* ActivitySheetStudioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitySheetStudioTableViewController.m; sourceTree = "<group>"; };
+		E507FE9A12EDE17C004F0C8C /* ActivitySheetStudioTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ActivitySheetStudioTableViewController.xib; path = Classes/ActivitySheetStudioTableViewController.xib; sourceTree = "<group>"; };
+		E507FE9B12EDE17C004F0C8C /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		E507FE9C12EDE17C004F0C8C /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		E507FE9D12EDE17C004F0C8C /* AudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AudioViewController.xib; path = Classes/AudioViewController.xib; sourceTree = "<group>"; };
+		E507FE9E12EDE17C004F0C8C /* CreateActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateActivityViewController.h; sourceTree = "<group>"; };
+		E507FE9F12EDE17C004F0C8C /* CreateActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateActivityViewController.m; sourceTree = "<group>"; };
+		E507FEA012EDE17C004F0C8C /* frameArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = frameArray.h; path = Classes/frameArray.h; sourceTree = "<group>"; };
+		E507FEA412EDE17C004F0C8C /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		E507FEA512EDE17C004F0C8C /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		E507FEA612EDE17C004F0C8C /* ImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ImageViewController.xib; path = Classes/ImageViewController.xib; sourceTree = "<group>"; };
+		E507FEA712EDE17C004F0C8C /* IPAACActivitySheetStudio.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = IPAACActivitySheetStudio.xib; path = Classes/IPAACActivitySheetStudio.xib; sourceTree = "<group>"; };
+		E507FEAA12EDE17C004F0C8C /* IPAACMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAACMainViewController.h; sourceTree = "<group>"; };
+		E507FEAB12EDE17C004F0C8C /* IPAACMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAACMainViewController.m; sourceTree = "<group>"; };
+		E507FEAC12EDE17C004F0C8C /* IPAACMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = IPAACMainViewController.xib; path = Classes/IPAACMainViewController.xib; sourceTree = "<group>"; };
+		E507FEB812EDE17C004F0C8C /* RecordingTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingTestViewController.h; sourceTree = "<group>"; };
+		E507FEB912EDE17C004F0C8C /* RecordingTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingTestViewController.m; sourceTree = "<group>"; };
+		E507FED512EDE235004F0C8C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E507FED712EDE235004F0C8C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E507FED912EDE235004F0C8C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		E507FEF012EDE2B3004F0C8C /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = SOURCE_ROOT; };
+		E507FEF112EDE2B3004F0C8C /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = SOURCE_ROOT; };
+		E507FEF212EDE2B3004F0C8C /* PDFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFViewController.xib; sourceTree = "<group>"; };
+		E507FF7412EDE374004F0C8C /* Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add.png; sourceTree = "<group>"; };
+		E507FF7512EDE374004F0C8C /* AddSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddSelected.png; sourceTree = "<group>"; };
+		E507FF7612EDE374004F0C8C /* blank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blank.jpg; sourceTree = "<group>"; };
+		E507FF7912EDE374004F0C8C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E507FF8012EDE374004F0C8C /* Remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Remove.png; sourceTree = "<group>"; };
+		E507FF8112EDE374004F0C8C /* RemoveSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RemoveSelected.png; sourceTree = "<group>"; };
+		E507FF8612EDE374004F0C8C /* unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlock.png; sourceTree = "<group>"; };
+		E507FF8812EDE374004F0C8C /* blank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blank.wav; sourceTree = "<group>"; };
+		E507FF8912EDE374004F0C8C /* User Manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "User Manual.pdf"; sourceTree = "<group>"; };
+		E507FFB012EDE5E6004F0C8C /* RecordingTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingTestViewController.xib; sourceTree = "<group>"; };
+		E50CBF82130E077100B40720 /* CoinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CoinViewController.xib; path = Classes/CoinViewController.xib; sourceTree = "<group>"; };
+		E50CBF84130E079500B40720 /* Coin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Coin.h; path = Classes/Coin.h; sourceTree = "<group>"; };
+		E50CBF85130E079500B40720 /* Coin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Coin.m; path = Classes/Coin.m; sourceTree = "<group>"; };
+		E50CBF86130E079500B40720 /* CoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinViewController.h; sourceTree = "<group>"; };
+		E50CBF87130E079500B40720 /* CoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinViewController.m; sourceTree = "<group>"; };
+		E50CBF8B130E07CC00B40720 /* dimedemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dimedemo.png; sourceTree = "<group>"; };
+		E50CBF8C130E07CC00B40720 /* nickeldemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nickeldemo.png; sourceTree = "<group>"; };
+		E50CBF8D130E07CC00B40720 /* pennydemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pennydemo.png; sourceTree = "<group>"; };
+		E50CBF8E130E07CC00B40720 /* quarterdemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quarterdemo.png; sourceTree = "<group>"; };
+		E50CBFA7130E093C00B40720 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		E533FFC713456D4100E8119B /* PlayCoinItemSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayCoinItemSelect.h; sourceTree = "<group>"; };
+		E533FFC813456D4100E8119B /* PlayCoinItemSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayCoinItemSelect.m; sourceTree = "<group>"; };
+		E533FFC913456D4100E8119B /* PlayCoinItemSelect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayCoinItemSelect.xib; path = Classes/PlayCoinItemSelect.xib; sourceTree = "<group>"; };
+		E5A95091132574EF00BF9978 /* frameArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = frameArray.m; sourceTree = "<group>"; };
+		E5AD045F181B755E00D36B2D /* buy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = buy.gif; sourceTree = "<group>"; };
+		E5AD0460181B755E00D36B2D /* buydown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = buydown.gif; sourceTree = "<group>"; };
+		E5AD0461181B755E00D36B2D /* contactus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = contactus.gif; sourceTree = "<group>"; };
+		E5AD0462181B755E00D36B2D /* contactusdown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = contactusdown.gif; sourceTree = "<group>"; };
+		E5AD0463181B755E00D36B2D /* create.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = create.gif; sourceTree = "<group>"; };
+		E5AD0464181B755E00D36B2D /* createdown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = createdown.gif; sourceTree = "<group>"; };
+		E5AD0465181B755E00D36B2D /* website.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = website.gif; sourceTree = "<group>"; };
+		E5AD0466181B755E00D36B2D /* websitedown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = websitedown.gif; sourceTree = "<group>"; };
+		E5B01DBC12EE05BA008B3000 /* dimedemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dimedemo.jpg; sourceTree = "<group>"; };
+		E5B01DBD12EE05BA008B3000 /* dimedemo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dimedemo.wav; sourceTree = "<group>"; };
+		E5B01DBE12EE05BA008B3000 /* nickeldemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nickeldemo.jpg; sourceTree = "<group>"; };
+		E5B01DBF12EE05BA008B3000 /* nickeldemo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nickeldemo.wav; sourceTree = "<group>"; };
+		E5B01DC012EE05BA008B3000 /* pennydemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pennydemo.jpg; sourceTree = "<group>"; };
+		E5B01DC112EE05BA008B3000 /* pennydemo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pennydemo.wav; sourceTree = "<group>"; };
+		E5B01DC212EE05BA008B3000 /* quarterdemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quarterdemo.jpg; sourceTree = "<group>"; };
+		E5B01DC312EE05BA008B3000 /* quarterdemo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = quarterdemo.wav; sourceTree = "<group>"; };
+		E5EAF88D133E72C600F12006 /* PlayCoinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayCoinTableViewController.h; sourceTree = "<group>"; };
+		E5EAF88E133E72C600F12006 /* PlayCoinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayCoinTableViewController.m; sourceTree = "<group>"; };
+		E5EAF8A3133E797200F12006 /* PlayCoinTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayCoinTableViewController.xib; sourceTree = "<group>"; };
+		E5EAF8D3133E7F5E00F12006 /* CoinSheetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinSheetTableViewController.h; sourceTree = "<group>"; };
+		E5EAF8D4133E7F5E00F12006 /* CoinSheetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinSheetTableViewController.m; sourceTree = "<group>"; };
+		E5EAF8D5133E7F5E00F12006 /* CoinSheetTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CoinSheetTableViewController.xib; path = Classes/CoinSheetTableViewController.xib; sourceTree = "<group>"; };
+		E5EAF924133E891800F12006 /* CreateCoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCoinViewController.h; sourceTree = "<group>"; };
+		E5EAF925133E891800F12006 /* CreateCoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateCoinViewController.m; sourceTree = "<group>"; };
+		E5EAF926133E891800F12006 /* CreateCoinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CreateCoinViewController.xib; path = Classes/CreateCoinViewController.xib; sourceTree = "<group>"; };
+		E5EEA2FB12EE01BC00C6DF2F /* CreateActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CreateActivityViewController.xib; path = Classes/CreateActivityViewController.xib; sourceTree = "<group>"; };
+		E5EEA2FC12EE01BD00C6DF2F /* PlayActivitySheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayActivitySheet.xib; path = Classes/PlayActivitySheet.xib; sourceTree = "<group>"; };
+		E5F4550F1491899C0013E1C6 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		E5F455101491899C0013E1C6 /* cereal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cereal.png; sourceTree = "<group>"; };
+		E5F455111491899C0013E1C6 /* crayon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crayon.png; sourceTree = "<group>"; };
+		E5F455121491899C0013E1C6 /* drink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drink.jpg; sourceTree = "<group>"; };
+		E5F455141491899C0013E1C6 /* shoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe.png; sourceTree = "<group>"; };
+		E5F455151491899C0013E1C6 /* snack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snack.png; sourceTree = "<group>"; };
+		E5F455161491899C0013E1C6 /* tshirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tshirt.png; sourceTree = "<group>"; };
+		E5F455171491899C0013E1C6 /* balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				E507FED612EDE235004F0C8C /* AudioToolbox.framework in Frameworks */,
+				E507FED812EDE235004F0C8C /* AVFoundation.framework in Frameworks */,
+				E507FEDA12EDE235004F0C8C /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E507FEF012EDE2B3004F0C8C /* PDFViewController.h */,
+				E507FEF112EDE2B3004F0C8C /* PDFViewController.m */,
+				E507FEAA12EDE17C004F0C8C /* IPAACMainViewController.h */,
+				E507FEAB12EDE17C004F0C8C /* IPAACMainViewController.m */,
+				E50CBFE6130E10C300B40720 /* Create Side */,
+				E50CBFE5130E108600B40720 /* Play Side */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* BUYit!.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E5AD0490181B7A7500D36B2D /* 3rd Party */,
+				E507FE9712EDE155004F0C8C /* Delegate */,
+				E507FEDF12EDE248004F0C8C /* IPAAC Objects */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				8D1107310486CEB800E47090 /* BUYit!-Info.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CA18A5D148F0D7700E3F82C /* DS-DIGI.TTF */,
+				E507FF8912EDE374004F0C8C /* User Manual.pdf */,
+				E5EAF926133E891800F12006 /* CreateCoinViewController.xib */,
+				E5EAF8D5133E7F5E00F12006 /* CoinSheetTableViewController.xib */,
+				E5EAF8A3133E797200F12006 /* PlayCoinTableViewController.xib */,
+				E533FFC913456D4100E8119B /* PlayCoinItemSelect.xib */,
+				E50CBF82130E077100B40720 /* CoinViewController.xib */,
+				E5EEA2FC12EE01BD00C6DF2F /* PlayActivitySheet.xib */,
+				E5EEA2FB12EE01BC00C6DF2F /* CreateActivityViewController.xib */,
+				E507FEF212EDE2B3004F0C8C /* PDFViewController.xib */,
+				E507FE9A12EDE17C004F0C8C /* ActivitySheetStudioTableViewController.xib */,
+				E507FE9D12EDE17C004F0C8C /* AudioViewController.xib */,
+				E507FEA612EDE17C004F0C8C /* ImageViewController.xib */,
+				E507FEA712EDE17C004F0C8C /* IPAACActivitySheetStudio.xib */,
+				E507FEAC12EDE17C004F0C8C /* IPAACMainViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				E507FFB012EDE5E6004F0C8C /* RecordingTestViewController.xib */,
+				1C28BE4E1474B27200C21854 /* SQL.sqlite */,
+				E507FF7312EDE374004F0C8C /* images */,
+				E507FF8712EDE374004F0C8C /* sounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				E507FED512EDE235004F0C8C /* AudioToolbox.framework */,
+				E507FED712EDE235004F0C8C /* AVFoundation.framework */,
+				E507FED912EDE235004F0C8C /* libsqlite3.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E507FE9712EDE155004F0C8C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* IPAACAppDelegate.h */,
+				1D3623250D0F684500981E51 /* IPAACAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		E507FEDF12EDE248004F0C8C /* IPAAC Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E5A95091132574EF00BF9978 /* frameArray.m */,
+				E507FEA012EDE17C004F0C8C /* frameArray.h */,
+				E50CBF84130E079500B40720 /* Coin.h */,
+				E50CBF85130E079500B40720 /* Coin.m */,
+			);
+			name = "IPAAC Objects";
+			sourceTree = "<group>";
+		};
+		E507FF7312EDE374004F0C8C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				1CAE98A11472C35400608FBD /* shelf_wood_landscape.png */,
+				E5AD045F181B755E00D36B2D /* buy.gif */,
+				E5AD0460181B755E00D36B2D /* buydown.gif */,
+				E5AD0461181B755E00D36B2D /* contactus.gif */,
+				E5AD0462181B755E00D36B2D /* contactusdown.gif */,
+				E5AD0463181B755E00D36B2D /* create.gif */,
+				E5AD0464181B755E00D36B2D /* createdown.gif */,
+				E5AD0465181B755E00D36B2D /* website.gif */,
+				E5AD0466181B755E00D36B2D /* websitedown.gif */,
+				1C28BE5F1474B49900C21854 /* Wallpaper_Landscape.png */,
+				1CAE98BA1472C6CC00608FBD /* cointitle.png */,
+				1CAE98A51472C37E00608FBD /* itembackwood.png */,
+				1CAE98A31472C37000608FBD /* light-wood.jpg */,
+				E5F4550F1491899C0013E1C6 /* car.png */,
+				E5F455101491899C0013E1C6 /* cereal.png */,
+				E5F455111491899C0013E1C6 /* crayon.png */,
+				E5F455121491899C0013E1C6 /* drink.jpg */,
+				E5F455141491899C0013E1C6 /* shoe.png */,
+				E5F455151491899C0013E1C6 /* snack.png */,
+				E5F455161491899C0013E1C6 /* tshirt.png */,
+				E5F455171491899C0013E1C6 /* balloon.png */,
+				1CD7251F148C0632007F90C0 /* adminbutton.png */,
+				E50CBFA7130E093C00B40720 /* refresh.png */,
+				1CD72521148C063D007F90C0 /* playbutton.png */,
+				E50CBF8B130E07CC00B40720 /* dimedemo.png */,
+				1C572D7C143247AD001983AF /* 972343.hand.png */,
+				E50CBF8C130E07CC00B40720 /* nickeldemo.png */,
+				E50CBF8D130E07CC00B40720 /* pennydemo.png */,
+				E50CBF8E130E07CC00B40720 /* quarterdemo.png */,
+				E5B01DBC12EE05BA008B3000 /* dimedemo.jpg */,
+				E5B01DBE12EE05BA008B3000 /* nickeldemo.jpg */,
+				1CD7251D148C0626007F90C0 /* buy-it--lock-explain.png */,
+				E5B01DC012EE05BA008B3000 /* pennydemo.jpg */,
+				E5B01DC212EE05BA008B3000 /* quarterdemo.jpg */,
+				E507FF7412EDE374004F0C8C /* Add.png */,
+				E507FF7512EDE374004F0C8C /* AddSelected.png */,
+				E507FF7612EDE374004F0C8C /* blank.jpg */,
+				E507FF7912EDE374004F0C8C /* icon.png */,
+				1CAE98951472C33000608FBD /* actbutton.png */,
+				1CAE98991472C33000608FBD /* display.png */,
+				1CAE989A1472C33000608FBD /* return.png */,
+				1C572D95143257CB001983AF /* coinreturn.jpg */,
+				E507FF8012EDE374004F0C8C /* Remove.png */,
+				E507FF8112EDE374004F0C8C /* RemoveSelected.png */,
+				E507FF8612EDE374004F0C8C /* unlock.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E507FF8712EDE374004F0C8C /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E5B01DBD12EE05BA008B3000 /* dimedemo.wav */,
+				E5B01DBF12EE05BA008B3000 /* nickeldemo.wav */,
+				E5B01DC112EE05BA008B3000 /* pennydemo.wav */,
+				E5B01DC312EE05BA008B3000 /* quarterdemo.wav */,
+				E507FF8812EDE374004F0C8C /* blank.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		E50CBFE4130E106300B40720 /* Coins */ = {
+			isa = PBXGroup;
+			children = (
+				E533FFC713456D4100E8119B /* PlayCoinItemSelect.h */,
+				E533FFC813456D4100E8119B /* PlayCoinItemSelect.m */,
+				E50CBF86130E079500B40720 /* CoinViewController.h */,
+				E50CBF87130E079500B40720 /* CoinViewController.m */,
+			);
+			name = Coins;
+			sourceTree = "<group>";
+		};
+		E50CBFE5130E108600B40720 /* Play Side */ = {
+			isa = PBXGroup;
+			children = (
+				E50CBFE4130E106300B40720 /* Coins */,
+				E5EAF88D133E72C600F12006 /* PlayCoinTableViewController.h */,
+				E5EAF88E133E72C600F12006 /* PlayCoinTableViewController.m */,
+			);
+			name = "Play Side";
+			sourceTree = "<group>";
+		};
+		E50CBFE6130E10C300B40720 /* Create Side */ = {
+			isa = PBXGroup;
+			children = (
+				E5EAF8E4133E7FA600F12006 /* Base */,
+				E5EAF8E6133E7FC000F12006 /* Coins */,
+				E507FEA412EDE17C004F0C8C /* ImageViewController.h */,
+				E507FEA512EDE17C004F0C8C /* ImageViewController.m */,
+				E507FEB812EDE17C004F0C8C /* RecordingTestViewController.h */,
+				E507FEB912EDE17C004F0C8C /* RecordingTestViewController.m */,
+				E507FE9B12EDE17C004F0C8C /* AudioViewController.h */,
+				E507FE9C12EDE17C004F0C8C /* AudioViewController.m */,
+			);
+			name = "Create Side";
+			sourceTree = "<group>";
+		};
+		E5AD0490181B7A7500D36B2D /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "3rd Party";
+			path = Classes/Source;
+			sourceTree = "<group>";
+		};
+		E5EAF8E4133E7FA600F12006 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E507FE9812EDE17C004F0C8C /* ActivitySheetStudioTableViewController.h */,
+				E507FE9912EDE17C004F0C8C /* ActivitySheetStudioTableViewController.m */,
+				E507FE9F12EDE17C004F0C8C /* CreateActivityViewController.m */,
+				E507FE9E12EDE17C004F0C8C /* CreateActivityViewController.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		E5EAF8E6133E7FC000F12006 /* Coins */ = {
+			isa = PBXGroup;
+			children = (
+				E5EAF925133E891800F12006 /* CreateCoinViewController.m */,
+				E5EAF924133E891800F12006 /* CreateCoinViewController.h */,
+				E5EAF8D3133E7F5E00F12006 /* CoinSheetTableViewController.h */,
+				E5EAF8D4133E7F5E00F12006 /* CoinSheetTableViewController.m */,
+			);
+			name = Coins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* BUYit! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BUYit!" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BUYit!";
+			productName = IPAAC;
+			productReference = 1D6058910D05DD3D006BFB54 /* BUYit!.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BUYit!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* BUYit! */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				E5AD046A181B755E00D36B2D /* contactusdown.gif in Resources */,
+				E507FEBB12EDE17C004F0C8C /* ActivitySheetStudioTableViewController.xib in Resources */,
+				E507FEBD12EDE17C004F0C8C /* AudioViewController.xib in Resources */,
+				E507FEC212EDE17C004F0C8C /* ImageViewController.xib in Resources */,
+				E507FEC312EDE17C004F0C8C /* IPAACActivitySheetStudio.xib in Resources */,
+				E507FEC612EDE17C004F0C8C /* IPAACMainViewController.xib in Resources */,
+				E507FEF412EDE2B3004F0C8C /* PDFViewController.xib in Resources */,
+				E507FF8A12EDE374004F0C8C /* Add.png in Resources */,
+				E507FF8B12EDE374004F0C8C /* AddSelected.png in Resources */,
+				E507FF8C12EDE374004F0C8C /* blank.jpg in Resources */,
+				E507FF8F12EDE374004F0C8C /* icon.png in Resources */,
+				E507FF9612EDE374004F0C8C /* Remove.png in Resources */,
+				E507FF9712EDE374004F0C8C /* RemoveSelected.png in Resources */,
+				E507FF9C12EDE374004F0C8C /* unlock.png in Resources */,
+				E507FF9D12EDE374004F0C8C /* blank.wav in Resources */,
+				E5AD046C181B755E00D36B2D /* createdown.gif in Resources */,
+				E5AD0468181B755E00D36B2D /* buydown.gif in Resources */,
+				E507FF9E12EDE374004F0C8C /* User Manual.pdf in Resources */,
+				E507FFB112EDE5E6004F0C8C /* RecordingTestViewController.xib in Resources */,
+				E5EEA2FE12EE01BD00C6DF2F /* CreateActivityViewController.xib in Resources */,
+				E5EEA2FF12EE01BD00C6DF2F /* PlayActivitySheet.xib in Resources */,
+				E5B01DC412EE05BA008B3000 /* dimedemo.jpg in Resources */,
+				E5B01DC512EE05BA008B3000 /* dimedemo.wav in Resources */,
+				E5B01DC612EE05BA008B3000 /* nickeldemo.jpg in Resources */,
+				E5B01DC712EE05BA008B3000 /* nickeldemo.wav in Resources */,
+				E5AD046E181B755E00D36B2D /* websitedown.gif in Resources */,
+				E5B01DC812EE05BA008B3000 /* pennydemo.jpg in Resources */,
+				E5B01DC912EE05BA008B3000 /* pennydemo.wav in Resources */,
+				E5B01DCA12EE05BA008B3000 /* quarterdemo.jpg in Resources */,
+				E5B01DCB12EE05BA008B3000 /* quarterdemo.wav in Resources */,
+				E50CBF83130E077100B40720 /* CoinViewController.xib in Resources */,
+				E50CBF8F130E07CC00B40720 /* dimedemo.png in Resources */,
+				E50CBF90130E07CC00B40720 /* nickeldemo.png in Resources */,
+				E50CBF91130E07CC00B40720 /* pennydemo.png in Resources */,
+				E50CBF92130E07CC00B40720 /* quarterdemo.png in Resources */,
+				E50CBFA9130E093C00B40720 /* refresh.png in Resources */,
+				E5AD046D181B755E00D36B2D /* website.gif in Resources */,
+				E5EAF8A8133E797200F12006 /* PlayCoinTableViewController.xib in Resources */,
+				E5AD046B181B755E00D36B2D /* create.gif in Resources */,
+				E5EAF8DD133E7F5E00F12006 /* CoinSheetTableViewController.xib in Resources */,
+				E5EAF92E133E891800F12006 /* CreateCoinViewController.xib in Resources */,
+				E5AD0467181B755E00D36B2D /* buy.gif in Resources */,
+				E533FFCB13456D4100E8119B /* PlayCoinItemSelect.xib in Resources */,
+				1C572D7D143247AD001983AF /* 972343.hand.png in Resources */,
+				E5AD0469181B755E00D36B2D /* contactus.gif in Resources */,
+				1C572D96143257CB001983AF /* coinreturn.jpg in Resources */,
+				1CAE989B1472C33000608FBD /* actbutton.png in Resources */,
+				1CAE989F1472C33000608FBD /* display.png in Resources */,
+				1CAE98A01472C33000608FBD /* return.png in Resources */,
+				1CAE98A21472C35400608FBD /* shelf_wood_landscape.png in Resources */,
+				1CAE98A41472C37000608FBD /* light-wood.jpg in Resources */,
+				1CAE98A61472C37E00608FBD /* itembackwood.png in Resources */,
+				1CAE98BB1472C6CC00608FBD /* cointitle.png in Resources */,
+				1C28BE4F1474B27200C21854 /* SQL.sqlite in Resources */,
+				1C28BE601474B49900C21854 /* Wallpaper_Landscape.png in Resources */,
+				1CD7251E148C0626007F90C0 /* buy-it--lock-explain.png in Resources */,
+				1CD72520148C0632007F90C0 /* adminbutton.png in Resources */,
+				1CD72522148C063D007F90C0 /* playbutton.png in Resources */,
+				1CA18A5E148F0D7700E3F82C /* DS-DIGI.TTF in Resources */,
+				E5F455181491899C0013E1C6 /* car.png in Resources */,
+				E5F455191491899C0013E1C6 /* cereal.png in Resources */,
+				E5F4551A1491899C0013E1C6 /* crayon.png in Resources */,
+				E5F4551B1491899C0013E1C6 /* drink.jpg in Resources */,
+				E5F4551D1491899C0013E1C6 /* shoe.png in Resources */,
+				E5F4551E1491899C0013E1C6 /* snack.png in Resources */,
+				E5F4551F1491899C0013E1C6 /* tshirt.png in Resources */,
+				E5F455201491899C0013E1C6 /* balloon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* IPAACAppDelegate.m in Sources */,
+				E507FEBA12EDE17C004F0C8C /* ActivitySheetStudioTableViewController.m in Sources */,
+				E507FEBC12EDE17C004F0C8C /* AudioViewController.m in Sources */,
+				E507FEBE12EDE17C004F0C8C /* CreateActivityViewController.m in Sources */,
+				E507FEC112EDE17C004F0C8C /* ImageViewController.m in Sources */,
+				E507FEC512EDE17C004F0C8C /* IPAACMainViewController.m in Sources */,
+				E507FECD12EDE17C004F0C8C /* RecordingTestViewController.m in Sources */,
+				E507FEF312EDE2B3004F0C8C /* PDFViewController.m in Sources */,
+				E50CBF88130E079500B40720 /* Coin.m in Sources */,
+				E50CBF89130E079500B40720 /* CoinViewController.m in Sources */,
+				E5A95092132574EF00BF9978 /* frameArray.m in Sources */,
+				E5EAF895133E72C600F12006 /* PlayCoinTableViewController.m in Sources */,
+				E5EAF8DC133E7F5E00F12006 /* CoinSheetTableViewController.m in Sources */,
+				E5EAF92D133E891800F12006 /* CreateCoinViewController.m in Sources */,
+				E533FFCA13456D4100E8119B /* PlayCoinItemSelect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BUYit!_Prefix.pch";
+				INFOPLIST_FILE = "BUYit!-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "BUYit!";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BUYit!_Prefix.pch";
+				INFOPLIST_FILE = "BUYit!-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "BUYit!";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "BUYit!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BUYit!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
