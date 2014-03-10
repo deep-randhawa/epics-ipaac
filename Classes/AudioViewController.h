@@ -14,7 +14,7 @@
 
 @interface AudioViewController : UITableViewController {
 		
-	NSMutableArray *listOfAudio;
+	NSArray *listOfAudio;
 	int sheettype;
 	
 }

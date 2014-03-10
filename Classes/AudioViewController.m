@@ -50,7 +50,7 @@
     
     
     
-    if (orientation == UIInterfaceOrientationLandscapeLeft  ||orientation ==  UIInterfaceOrientationLandscapeRight )
+    if (orientation == UIInterfaceOrientationLandscapeLeft  || orientation ==  UIInterfaceOrientationLandscapeRight )
         
     {
         
@@ -142,12 +142,12 @@
 			appDelegate.webController.detailAudio = 
 			[listOfAudio objectAtIndex:indexPath.row];
 			break;
-/*		case 2:
+		case 2:
 			[appDelegate.matchController.detailAudio release];
 			appDelegate.matchController.detailAudio = 
 			[listOfAudio objectAtIndex:indexPath.row];
 			break;
-/*		case 3:
+		case 3:
 			[appDelegate.sentenceController.detailAudio release];
 			appDelegate.sentenceController.detailAudio = 
 			[listOfAudio objectAtIndex:indexPath.row];

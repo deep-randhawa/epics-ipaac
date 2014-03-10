@@ -10,6 +10,7 @@
 
 
 @implementation Coin
+@synthesize iview;
 
 -(void) setVal:(int)val{
 	value = val;

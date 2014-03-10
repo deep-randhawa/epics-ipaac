@@ -49,11 +49,11 @@
 	*/
 }
 
--(IBAction)goToActivitySheetStudio:(id)sender
+-(IBAction)goToActivitySheetStudio :(id)sender
 {
 	//Do the same thing for the activity sheet studio page but use a different class this time
 	CoinSheetTableViewController *CoinEditor = [[CoinSheetTableViewController alloc]  init];
-	[self.navigationController pushViewController:CoinEditor animated:YES];
+	[self.navigationController pushViewController :CoinEditor animated:YES];
     
     //Sets the title of the navigation bar at the top of the view for the top item of the navigation stack
     //This line must be placed below the 'pushViewController' command so that we are editing the title of the correct view
@@ -75,15 +75,15 @@
 	*/
 }
 
--(IBAction) gotoWebsite
+-(IBAction)gotoWebsite :(id)sender
 {
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString:@"http://epics.ecn.purdue.edu/ipaac/"]];
 }
 
--(IBAction) gotoContactUs
+-(IBAction)gotoContactUs :(id)sender
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"About Us" message:@"If you have questions, suggestions, or would like to report an error, please contact us at epicsipaac@gmail.com or visit our website for more information.  Also check out our other applications, SPEAKall!, MAKEit!, and SPEAKone!"
-												   delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK",nil];
+												   delegate :self cancelButtonTitle :nil otherButtonTitles :@"OK",nil];
 	[alert show];
 	[alert release];
 }
@@ -91,7 +91,7 @@
 -(void)pdf
 {
 	// Create an instance of PDFViewController
-	PDFViewController *controller = [[PDFViewController alloc] initWithNibName:@"PDFViewController" bundle:nil];
+	PDFViewController *controller = [[PDFViewController alloc] initWithNibName :@"PDFViewController" bundle:nil];
 	[self.navigationController pushViewController:controller animated:YES];
 	// Release 'controller'
 	//[controller release];

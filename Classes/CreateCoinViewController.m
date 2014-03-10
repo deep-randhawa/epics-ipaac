@@ -157,7 +157,7 @@ static sqlite3 *database = nil;
 	
 }
 
-- (id) init:(NSString *)select: (int) clean:(NSMutableArray *) files
+- (id) init :(NSString *)select :(int) clean :(NSMutableArray *) files
 {
 	fileList = [[NSArray alloc] initWithArray:files];
 	editsheet = [[NSString stringWithFormat:@"\"%@\"",select] mutableCopy];
@@ -317,7 +317,6 @@ static sqlite3 *database = nil;
     [fArray setButtonNumber: numIcons];
     
 	int x1, x2, y1, y2;
-	float z;
     
     NSString *imageFile[16];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory , NSUserDomainMask, YES);

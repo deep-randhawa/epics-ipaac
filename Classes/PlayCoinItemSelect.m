@@ -133,8 +133,8 @@ static sqlite3 *database = nil;
 	UIImage *buttonImage[16];
 
 	
-	int init=0;
-	for (init; init<16; init++) {
+	//int init=0;
+	for (int init = 0; init<16; init++) {
         //
 		NSLog(@"Creating UIButtons %d", init);
 		ButtonArr[init] = [UIButton buttonWithType:UIButtonTypeRoundedRect];

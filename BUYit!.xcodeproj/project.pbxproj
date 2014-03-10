@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1C28BE4F1474B27200C21854 /* SQL.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1C28BE4E1474B27200C21854 /* SQL.sqlite */; };
 		1C28BE601474B49900C21854 /* Wallpaper_Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C28BE5F1474B49900C21854 /* Wallpaper_Landscape.png */; };
-		1C572D7D143247AD001983AF /* 972343.hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C572D7C143247AD001983AF /* 972343.hand.png */; };
 		1C572D96143257CB001983AF /* coinreturn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C572D95143257CB001983AF /* coinreturn.jpg */; };
 		1CA18A5E148F0D7700E3F82C /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 1CA18A5D148F0D7700E3F82C /* DS-DIGI.TTF */; };
 		1CAE989B1472C33000608FBD /* actbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CAE98951472C33000608FBD /* actbutton.png */; };
@@ -51,7 +50,6 @@
 		E507FF9612EDE374004F0C8C /* Remove.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8012EDE374004F0C8C /* Remove.png */; };
 		E507FF9712EDE374004F0C8C /* RemoveSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8112EDE374004F0C8C /* RemoveSelected.png */; };
 		E507FF9C12EDE374004F0C8C /* unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8612EDE374004F0C8C /* unlock.png */; };
-		E507FF9D12EDE374004F0C8C /* blank.wav in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8812EDE374004F0C8C /* blank.wav */; };
 		E507FF9E12EDE374004F0C8C /* User Manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E507FF8912EDE374004F0C8C /* User Manual.pdf */; };
 		E507FFB112EDE5E6004F0C8C /* RecordingTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E507FFB012EDE5E6004F0C8C /* RecordingTestViewController.xib */; };
 		E50CBF83130E077100B40720 /* CoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E50CBF82130E077100B40720 /* CoinViewController.xib */; };
@@ -74,13 +72,9 @@
 		E5AD046D181B755E00D36B2D /* website.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0465181B755E00D36B2D /* website.gif */; };
 		E5AD046E181B755E00D36B2D /* websitedown.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5AD0466181B755E00D36B2D /* websitedown.gif */; };
 		E5B01DC412EE05BA008B3000 /* dimedemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DBC12EE05BA008B3000 /* dimedemo.jpg */; };
-		E5B01DC512EE05BA008B3000 /* dimedemo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DBD12EE05BA008B3000 /* dimedemo.wav */; };
 		E5B01DC612EE05BA008B3000 /* nickeldemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DBE12EE05BA008B3000 /* nickeldemo.jpg */; };
-		E5B01DC712EE05BA008B3000 /* nickeldemo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DBF12EE05BA008B3000 /* nickeldemo.wav */; };
 		E5B01DC812EE05BA008B3000 /* pennydemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DC012EE05BA008B3000 /* pennydemo.jpg */; };
-		E5B01DC912EE05BA008B3000 /* pennydemo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DC112EE05BA008B3000 /* pennydemo.wav */; };
 		E5B01DCA12EE05BA008B3000 /* quarterdemo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DC212EE05BA008B3000 /* quarterdemo.jpg */; };
-		E5B01DCB12EE05BA008B3000 /* quarterdemo.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5B01DC312EE05BA008B3000 /* quarterdemo.wav */; };
 		E5EAF895133E72C600F12006 /* PlayCoinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAF88E133E72C600F12006 /* PlayCoinTableViewController.m */; };
 		E5EAF8A8133E797200F12006 /* PlayCoinTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EAF8A3133E797200F12006 /* PlayCoinTableViewController.xib */; };
 		E5EAF8DC133E7F5E00F12006 /* CoinSheetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EAF8D4133E7F5E00F12006 /* CoinSheetTableViewController.m */; };
@@ -102,7 +96,6 @@
 /* Begin PBXFileReference section */
 		1C28BE4E1474B27200C21854 /* SQL.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SQL.sqlite; sourceTree = "<group>"; };
 		1C28BE5F1474B49900C21854 /* Wallpaper_Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wallpaper_Landscape.png; sourceTree = "<group>"; };
-		1C572D7C143247AD001983AF /* 972343.hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 972343.hand.png; sourceTree = "<group>"; };
 		1C572D95143257CB001983AF /* coinreturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coinreturn.jpg; sourceTree = "<group>"; };
 		1CA18A5D148F0D7700E3F82C /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
 		1CAE98951472C33000608FBD /* actbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = actbutton.png; sourceTree = "<group>"; };
@@ -155,7 +148,6 @@
 		E507FF8012EDE374004F0C8C /* Remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Remove.png; sourceTree = "<group>"; };
 		E507FF8112EDE374004F0C8C /* RemoveSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RemoveSelected.png; sourceTree = "<group>"; };
 		E507FF8612EDE374004F0C8C /* unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlock.png; sourceTree = "<group>"; };
-		E507FF8812EDE374004F0C8C /* blank.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blank.wav; sourceTree = "<group>"; };
 		E507FF8912EDE374004F0C8C /* User Manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "User Manual.pdf"; sourceTree = "<group>"; };
 		E507FFB012EDE5E6004F0C8C /* RecordingTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordingTestViewController.xib; sourceTree = "<group>"; };
 		E50CBF82130E077100B40720 /* CoinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CoinViewController.xib; path = Classes/CoinViewController.xib; sourceTree = "<group>"; };
@@ -181,13 +173,9 @@
 		E5AD0465181B755E00D36B2D /* website.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = website.gif; sourceTree = "<group>"; };
 		E5AD0466181B755E00D36B2D /* websitedown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = websitedown.gif; sourceTree = "<group>"; };
 		E5B01DBC12EE05BA008B3000 /* dimedemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dimedemo.jpg; sourceTree = "<group>"; };
-		E5B01DBD12EE05BA008B3000 /* dimedemo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dimedemo.wav; sourceTree = "<group>"; };
 		E5B01DBE12EE05BA008B3000 /* nickeldemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nickeldemo.jpg; sourceTree = "<group>"; };
-		E5B01DBF12EE05BA008B3000 /* nickeldemo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = nickeldemo.wav; sourceTree = "<group>"; };
 		E5B01DC012EE05BA008B3000 /* pennydemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pennydemo.jpg; sourceTree = "<group>"; };
-		E5B01DC112EE05BA008B3000 /* pennydemo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pennydemo.wav; sourceTree = "<group>"; };
 		E5B01DC212EE05BA008B3000 /* quarterdemo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quarterdemo.jpg; sourceTree = "<group>"; };
-		E5B01DC312EE05BA008B3000 /* quarterdemo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = quarterdemo.wav; sourceTree = "<group>"; };
 		E5EAF88D133E72C600F12006 /* PlayCoinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayCoinTableViewController.h; sourceTree = "<group>"; };
 		E5EAF88E133E72C600F12006 /* PlayCoinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayCoinTableViewController.m; sourceTree = "<group>"; };
 		E5EAF8A3133E797200F12006 /* PlayCoinTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayCoinTableViewController.xib; sourceTree = "<group>"; };
@@ -359,7 +347,6 @@
 				E50CBFA7130E093C00B40720 /* refresh.png */,
 				1CD72521148C063D007F90C0 /* playbutton.png */,
 				E50CBF8B130E07CC00B40720 /* dimedemo.png */,
-				1C572D7C143247AD001983AF /* 972343.hand.png */,
 				E50CBF8C130E07CC00B40720 /* nickeldemo.png */,
 				E50CBF8D130E07CC00B40720 /* pennydemo.png */,
 				E50CBF8E130E07CC00B40720 /* quarterdemo.png */,
@@ -386,11 +373,6 @@
 		E507FF8712EDE374004F0C8C /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				E5B01DBD12EE05BA008B3000 /* dimedemo.wav */,
-				E5B01DBF12EE05BA008B3000 /* nickeldemo.wav */,
-				E5B01DC112EE05BA008B3000 /* pennydemo.wav */,
-				E5B01DC312EE05BA008B3000 /* quarterdemo.wav */,
-				E507FF8812EDE374004F0C8C /* blank.wav */,
 			);
 			path = sounds;
 			sourceTree = "<group>";
@@ -528,7 +510,6 @@
 				E507FF9612EDE374004F0C8C /* Remove.png in Resources */,
 				E507FF9712EDE374004F0C8C /* RemoveSelected.png in Resources */,
 				E507FF9C12EDE374004F0C8C /* unlock.png in Resources */,
-				E507FF9D12EDE374004F0C8C /* blank.wav in Resources */,
 				E5AD046C181B755E00D36B2D /* createdown.gif in Resources */,
 				E5AD0468181B755E00D36B2D /* buydown.gif in Resources */,
 				E507FF9E12EDE374004F0C8C /* User Manual.pdf in Resources */,
@@ -536,14 +517,10 @@
 				E5EEA2FE12EE01BD00C6DF2F /* CreateActivityViewController.xib in Resources */,
 				E5EEA2FF12EE01BD00C6DF2F /* PlayActivitySheet.xib in Resources */,
 				E5B01DC412EE05BA008B3000 /* dimedemo.jpg in Resources */,
-				E5B01DC512EE05BA008B3000 /* dimedemo.wav in Resources */,
 				E5B01DC612EE05BA008B3000 /* nickeldemo.jpg in Resources */,
-				E5B01DC712EE05BA008B3000 /* nickeldemo.wav in Resources */,
 				E5AD046E181B755E00D36B2D /* websitedown.gif in Resources */,
 				E5B01DC812EE05BA008B3000 /* pennydemo.jpg in Resources */,
-				E5B01DC912EE05BA008B3000 /* pennydemo.wav in Resources */,
 				E5B01DCA12EE05BA008B3000 /* quarterdemo.jpg in Resources */,
-				E5B01DCB12EE05BA008B3000 /* quarterdemo.wav in Resources */,
 				E50CBF83130E077100B40720 /* CoinViewController.xib in Resources */,
 				E50CBF8F130E07CC00B40720 /* dimedemo.png in Resources */,
 				E50CBF90130E07CC00B40720 /* nickeldemo.png in Resources */,
@@ -557,7 +534,6 @@
 				E5EAF92E133E891800F12006 /* CreateCoinViewController.xib in Resources */,
 				E5AD0467181B755E00D36B2D /* buy.gif in Resources */,
 				E533FFCB13456D4100E8119B /* PlayCoinItemSelect.xib in Resources */,
-				1C572D7D143247AD001983AF /* 972343.hand.png in Resources */,
 				E5AD0469181B755E00D36B2D /* contactus.gif in Resources */,
 				1C572D96143257CB001983AF /* coinreturn.jpg in Resources */,
 				1CAE989B1472C33000608FBD /* actbutton.png in Resources */,

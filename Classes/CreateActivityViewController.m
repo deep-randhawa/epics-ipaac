@@ -157,7 +157,7 @@ static sqlite3 *database = nil;
 	
 }
 
-- (id) init:(NSString *)select: (int) clean:(NSMutableArray *) files
+- (id) init :(NSString *)select :(int) clean :(NSMutableArray *) files
 {
 	fileList = [[NSArray alloc] initWithArray:files];
 	//fileList = [[NSArray alloc] initWithArray:[files mutableCopy]];

@@ -51,7 +51,7 @@
 	//IBOutlet UIImageView *iconView;
 }
 
-- (id) init: (NSString *) select: (int) clean:(NSArray *) files;
+- (id) init :(NSString *) select :(int) clean :(NSArray *) files;
 
 
 - (IBAction) recordAudio;
