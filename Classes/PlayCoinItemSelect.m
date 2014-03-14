@@ -41,6 +41,7 @@ static sqlite3 *database = nil;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    
 	NSLog(@"InView did load");
 	
 	NSLog(@"Testing DB");

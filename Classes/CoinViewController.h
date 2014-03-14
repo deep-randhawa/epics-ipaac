@@ -13,7 +13,7 @@
 @interface CoinViewController : UIViewController {
 	
 	UIImageView *Stacks[4];
-    
+    NSArray *coinVal[4];
 	NSMutableArray *Coins;
     
 	int numCoins;

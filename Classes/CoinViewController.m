@@ -145,60 +145,32 @@
         }
             
     }*/
-    
-    
-    // should implement for loop for this process
-    
-    if(Stacks[0].center.x >=666){//If penny placed in tray
-		Coin *temporary = [Coin new];
-		 UIImageView *temp = [[UIImageView alloc] initWithImage:images[0]];
-		temp.frame = CGRectMake(Stacks[0].center.x-75,Stacks[0].center.y-75,150,150);
-		[temporary setIview:temp];
-		[temporary setVal:1];
-		[Coins addObject:temporary];
-		[self.view addSubview:[temporary getIview]];
-		[temporary release];
-		numCoins+=1;
-		Stacks[0].center = CGPointMake(pennyX + centering, pennyY + centering);
-	}
-	if(Stacks[1].center.x >=666){
-		Coin *temporary = [Coin new];
-		 UIImageView *temp = [[UIImageView alloc] initWithImage:images[1]];
-		temp.frame = CGRectMake(Stacks[1].center.x-75,Stacks[1].center.y-75,150,150);
-		[temporary setIview:temp];
-		[temporary setVal:5];
-		[Coins addObject:temporary];
-		[self.view addSubview:[temporary getIview]];
-		[temporary release];
-		numCoins+=1;
-		Stacks[1].center = CGPointMake(nickelX + centering, nickelY + centering);
-	}
-	if(Stacks[2].center.x >=666){
-		Coin *temporary = [Coin new];
-		 UIImageView *temp = [[UIImageView alloc] initWithImage:images[2]];
-		temp.frame = CGRectMake(Stacks[2].center.x-75,Stacks[2].center.y-75,150,150);
-		[temporary setIview:temp];
-		[temporary setVal:10];
-		[Coins addObject:temporary];
-		[self.view addSubview:[temporary getIview]];
-		[temporary release];
-		numCoins+=1;
-		Stacks[2].center = CGPointMake(dimeX + centering, dimeY + centering);
-	}
-    
-	if(Stacks[3].center.x >=666){
-		Coin *temporary = [Coin new];
-		 UIImageView *temp = [[UIImageView alloc] initWithImage:images[3]];
-		temp.frame = CGRectMake(Stacks[3].center.x-75,Stacks[3].center.y-75,150,150);
-		[temporary setIview:temp];
-		[temporary setVal:25];
-		[Coins addObject:temporary];
-		[self.view addSubview:[temporary getIview]];
-		[temporary release];
-		numCoins+=1;
-		Stacks[3].center = CGPointMake(quarterX + centering, quarterY + centering);
-	}
 
+    
+    
+     // Coin Val should be reduced to one line if possible
+    
+     coinVal[0] = 1;
+     coinVal[1] = 5;
+     coinVal[2] = 10;
+     coinVal[3] = 25;
+     
+     for(i = 0; i < 4; i++){
+        if(Stacks[i].center.x >=666){//If penny placed in tray
+            Coin *temporary = [Coin new];
+            UIImageView *temp = [[UIImageView alloc] initWithImage:images[i]];
+            temp.frame = CGRectMake(Stacks[i].center.x-75,Stacks[i].center.y-75,150,150);
+            [temporary setIview:temp];
+            [temporary setVal:coinVal[i]];
+            [Coins addObject:temporary];
+            [self.view addSubview:[temporary getIview]];
+            [temporary release];
+            numCoins+=1;
+        }
+     
+     }
+    
+    
 	for (i = 0; i<[Coins count]; i++) {//Check if removed from tray
 		if ([[Coins objectAtIndex:i] getIview].center.x < 666) {
 			numCoins-=1;
