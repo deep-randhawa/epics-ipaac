@@ -83,53 +83,56 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 	NSSet *allTouches = [event allTouches];
-	switch([allTouches count])
+    
+	if([allTouches count])
 	{
-		case 1:
-		{
 			UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
 			CGPoint location = [touch locationInView:self.view];
-			for(int i = 0;i < 4;i++){
+        
+        if (dragBusy != -1){
+            if(j != -1){
+                //NSLog(@"",)
+                [[Coins objectAtIndex:dragBusy] getIview].center = location;
+            }else{
+                Stacks[dragBusy].center = location;
+            }
+            }else{
+                
+			for(i = 0; (i < 4) && (dragBusy == -1); i++){
 				if([Stacks[i] pointInside:[self.view convertPoint:location toView:Stacks[i]] withEvent:event]){
-					if(dragBusy==-1){
-						dragBusy=i;
+						dragBusy = i;
 						Stacks[i].center = location;
 						[self.view bringSubviewToFront:Stacks[i]];
-						
-					}
-					else {
-						if(dragBusy == i){
-							Stacks[i].center = location;
-						}
-					}
+                        j = -1;
 				}
 			}
 			
-			for(int i = 0; i<[Coins count]; i++)
+			for(i = 0; (i < [Coins count]) && (dragBusy == -1); i++)
 			{
-				if([[[Coins objectAtIndex:i] getIview] pointInside:[self.view convertPoint:location toView:[[Coins objectAtIndex:i] getIview]] withEvent:event]){
-					if (dragBusy==-1) {
-						dragBusy=i;
+				if([[[Coins objectAtIndex:i] getIview] pointInside:[self.view convertPoint:location toView:[[Coins objectAtIndex:i] getIview]] withEvent:event]) {
+						dragBusy = i;
 						[[Coins objectAtIndex:i] getIview].center = location;
 						[self.view bringSubviewToFront:[[Coins objectAtIndex:i] getIview]];
 					}
-					else {
-						if(dragBusy == i){
-							[[Coins objectAtIndex:i] getIview].center = location;
-						}
-					}
-				}
-			}
-			break;
-		}
+                }
+            }
+        }
 	}
-}
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
-	dragBusy=-1;
-	sum=0;
-	oldNumCoins = numCoins; //Used for a check for the popup
-	//int k;
+	
+    dragBusy = -1;
+	sum = 0;
+	oldNumCoins = numCoins;
+    
+    
+    i = 0;
+    j = 0;
+    
+    //Used for a check for the popup
+    
+	
+    //int k;
     
     /*for(k=0;k<4;k++)
     {
@@ -144,7 +147,7 @@
     }*/
     
     
-    
+    // should implement for loop for this process
     
     if(Stacks[0].center.x >=666){//If penny placed in tray
 		Coin *temporary = [Coin new];
@@ -182,6 +185,7 @@
 		numCoins+=1;
 		Stacks[2].center = CGPointMake(dimeX + centering, dimeY + centering);
 	}
+    
 	if(Stacks[3].center.x >=666){
 		Coin *temporary = [Coin new];
 		 UIImageView *temp = [[UIImageView alloc] initWithImage:images[3]];
@@ -194,8 +198,8 @@
 		numCoins+=1;
 		Stacks[3].center = CGPointMake(quarterX + centering, quarterY + centering);
 	}
-	
-	for (int i = 0; i<[Coins count]; i++) {//Check if removed from tray
+
+	for (i = 0; i<[Coins count]; i++) {//Check if removed from tray
 		if ([[Coins objectAtIndex:i] getIview].center.x < 666) {
 			numCoins-=1;
 			[[[Coins objectAtIndex:i] getIview] removeFromSuperview];
@@ -204,8 +208,8 @@
 		}
 	}
 	
-	for (int i = 0; i<[Coins count]; i++) {
-		sum+=[[Coins objectAtIndex:i] getVal]/100.0;
+	for (i = 0; i<[Coins count]; i++) {
+		sum += [[Coins objectAtIndex:i] getVal] / 100.0;
 		NSLog(@"%1.2f",sum);//Display sum by adding every coin individually
 	}
 	
@@ -213,11 +217,14 @@
 	NSString *sumstr = [[NSString alloc] initWithFormat:@"$%1.2f",sum];
 	Amount.text = sumstr;
 	[sumstr release];
+    
+    [self stackRefresh];
 	
 	}
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
 	[self touchesBegan:touches withEvent:event];
+    
 }
 
 
@@ -237,16 +244,19 @@
  - (void)loadView {
  }*/
 
-- (IBAction) coinRefresh{
-	
+- (void) stackRefresh{
+    
 	Stacks[0].center = CGPointMake(pennyX + centering, pennyY + centering);
 	Stacks[1].center = CGPointMake(nickelX + centering, nickelY + centering);
 	Stacks[2].center = CGPointMake(dimeX + centering, dimeY + centering);
 	Stacks[3].center = CGPointMake(quarterX + centering, quarterY + centering);
 	
 	NSLog(@"\ncoin count = %d\n",[Coins count]);
+}
+
+- (IBAction) coinRefresh{
 	
-	while ([Coins count]>0)
+	while ([Coins count]>0) // should look for less itterative approach
 	{
 		[[[Coins lastObject] getIview] removeFromSuperview];
 		[[[Coins lastObject] getIview] release];
@@ -255,12 +265,17 @@
 	
 	Amount.text = @"$0.00";
 	NSLog(@"reset coins");
-}
+
+     
+     }
 
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    
+    i = 0;
+    
 	[Amount setFont: [UIFont fontWithName: @"Lucida Grande" size: 64]];
 	Coins = [[NSMutableArray alloc] initWithCapacity:0];
 	//const float colorMask[6] = {255,255,255,255,255,255};
@@ -370,7 +385,7 @@
 }
 
 - (void)viewDidUnload {
-	for(int i = 0;i<4;i++){
+	for(i = 0;i<4;i++){
 		[Stacks[i] release];
 	}
 	while ([Coins count]>0)

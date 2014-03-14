@@ -13,20 +13,28 @@
 @interface CoinViewController : UIViewController {
 	
 	UIImageView *Stacks[4];
+    
 	NSMutableArray *Coins;
+    
 	int numCoins;
 	IBOutlet UILabel *Amount;
 	IBOutlet UIButton *Refresh;
 	UIImage *images[4];
+    
+    int i; // lcv
+    int j; // need better names still (helps drag busy)
+    
 	int xOffset,yOffset;
-	int dragBusy;
-	NSString * selected_item;
+	int dragBusy; // avoids coin eating (requires int j)
+	NSString *selected_item;
 	NSString *item_price;
-	NSString *priceFloat;
-	float priceCompare, sum;
+    NSString *priceFloat;
+    float priceCompare, sum;
 	int oldNumCoins;
 }
+
 @property (nonatomic,retain) IBOutlet UIButton *Refresh;
+
 -(IBAction) coinRefresh;
 -(IBAction) unlockButton;
 -(IBAction) buyButton;
