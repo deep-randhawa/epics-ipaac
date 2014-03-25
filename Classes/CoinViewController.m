@@ -20,13 +20,14 @@
 //spawn point, top-left pixel + center adjust
 
 @implementation CoinViewController
-@synthesize Refresh;
 
 - (IBAction) unlockButton {
 	[[self navigationController] setNavigationBarHidden:YES animated:YES];
 	[self.navigationController popViewControllerAnimated:YES];
 }
 
+
+//Needs to be reworked
 - (IBAction) buyButton {//Compare sum with priceCompare
 	if (sum == priceCompare){// && oldNumCoins != numCoins){
 		UIAlertView *win = [[UIAlertView alloc] initWithTitle:@"Item Purchased" 
@@ -86,38 +87,46 @@
     
 	if([allTouches count])
 	{
-			UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
-			CGPoint location = [touch locationInView:self.view];
+        UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
+        CGPoint location = [touch locationInView:self.view];
         
-        if (dragBusy != -1){
-            if(j != -1){
-                //NSLog(@"",)
-                [[Coins objectAtIndex:dragBusy] getIview].center = location;
-            }else{
-                Stacks[dragBusy].center = location;
-            }
-            }else{
-                
 			for(i = 0; (i < 4) && (dragBusy == -1); i++){
 				if([Stacks[i] pointInside:[self.view convertPoint:location toView:Stacks[i]] withEvent:event]){
-						dragBusy = i;
-						Stacks[i].center = location;
-						[self.view bringSubviewToFront:Stacks[i]];
-                        j = -1;
-				}
+                    
+                    dragBusy = i;
+                    Stacks[i].center = location;
+                    [self.view bringSubviewToFront:Stacks[i]];
+                    j = -1;
+                }
 			}
 			
 			for(i = 0; (i < [Coins count]) && (dragBusy == -1); i++)
 			{
 				if([[[Coins objectAtIndex:i] getIview] pointInside:[self.view convertPoint:location toView:[[Coins objectAtIndex:i] getIview]] withEvent:event]) {
-						dragBusy = i;
-						[[Coins objectAtIndex:i] getIview].center = location;
-						[self.view bringSubviewToFront:[[Coins objectAtIndex:i] getIview]];
-					}
+                    
+                    dragBusy = i;
+                    [[Coins objectAtIndex:i] getIview].center = location;
+                    [self.view bringSubviewToFront:[[Coins objectAtIndex:i] getIview]];
                 }
             }
         }
-	}
+    }
+
+-(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    NSSet *allTouches = [event allTouches];
+    if([allTouches count]) {
+    
+        UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
+        CGPoint location = [touch locationInView:self.view];
+    
+        if(j != -1){
+            [[Coins objectAtIndex:dragBusy] getIview].center = location;
+        }else{
+            Stacks[dragBusy].center = location;
+        }
+    }
+}
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
 	
@@ -129,26 +138,7 @@
     i = 0;
     j = 0;
     
-    //Used for a check for the popup
-    
-	
-    //int k;
-    
-    /*for(k=0;k<4;k++)
-    {
-        if(Stacks[k].center.x >=666 && Stacks[k].center.y<160 && Stacks[k].center.y > 618)
-        {
-             Stacks[k].center = CGPointMake(pennyX + centering, pennyY + centering);
-            [Stacks[k] removeFromSuperview];
-		    [Stacks[k] release];
-		    [Coins removeLastObject];
-        }
-            
-    }*/
-
-    
-    
-     // Coin Val should be reduced to one line if possible
+     //assignment of Coin Val should be reduced to one line if possible
     
      coinVal[0] = 1;
      coinVal[1] = 5;
@@ -156,7 +146,7 @@
      coinVal[3] = 25;
      
      for(i = 0; i < 4; i++){
-        if(Stacks[i].center.x >=666){//If penny placed in tray
+        if(Stacks[i].center.x >= 666){//If penny placed in tray
             Coin *temporary = [Coin new];
             UIImageView *temp = [[UIImageView alloc] initWithImage:images[i]];
             temp.frame = CGRectMake(Stacks[i].center.x-75,Stacks[i].center.y-75,150,150);
@@ -194,27 +184,6 @@
 	
 	}
 
--(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-	[self touchesBegan:touches withEvent:event];
-    
-}
-
-
-/*
- // The designated initializer. Override to perform setup that is required before the view is loaded.
- - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
- self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
- if (self) {
- // Custom initialization
- }
- return self;
- }
- */
-
-/*
- // Implement loadView to create a view hierarchy programmatically, without using a nib.
- - (void)loadView {
- }*/
 
 - (void) stackRefresh{
     
@@ -237,9 +206,7 @@
 	
 	Amount.text = @"$0.00";
 	NSLog(@"reset coins");
-
-     
-     }
+}
 
 
 
@@ -297,63 +264,8 @@
 	
 	[self.view addSubview:item];
 	//[item release];
-	//[Refresh addTarget:self action:@selecter(coinRefresh:) forControlEvents:UIControlEventTouchUpInside];
+
     [super viewDidLoad];
-}
-
-
-
-// Override to allow orientations other than the default portrait orientation.
-//for ios6 orientation
-
-- (BOOL)shouldAutorotate {
-    
-    
-    
-    UIInterfaceOrientation orientation = [[UIDevice currentDevice] orientation];
-    
-    
-    
-    if (orientation == UIInterfaceOrientationLandscapeLeft  ||orientation ==  UIInterfaceOrientationLandscapeRight )
-        
-    {
-        
-        
-        
-        return YES;
-        
-    }
-    
-    return NO;
-    
-}
-
-
-
-//for ios5 orientation
-
-
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    
-    //interfaceOrientation == UIInterfaceOrientationLandscapeRight;
-    
-    if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft  ||interfaceOrientation ==  UIInterfaceOrientationLandscapeRight ) {
-        
-        
-        
-        return YES;
-        
-    }
-    return NO;
-}
-
-
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
 }
 
 - (void)viewDidUnload {
@@ -371,8 +283,90 @@
 }
 
 
+
+// Override to allow orientations other than the default portrait orientation.
+//for ios6 orientation
+
+- (BOOL)shouldAutorotate {
+    
+    UIInterfaceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    
+    if (orientation == UIInterfaceOrientationLandscapeLeft  ||orientation ==  UIInterfaceOrientationLandscapeRight )
+        
+    {
+        
+        return YES;
+    }
+    
+    return NO;
+}
+
+
+
+//for ios5 orientation
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    
+    //interfaceOrientation == UIInterfaceOrientationLandscapeRight;
+    
+    if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft  ||interfaceOrientation ==  UIInterfaceOrientationLandscapeRight ) {
+        
+        return YES;
+    }
+    
+    return NO;
+}
+
+
+- (void)didReceiveMemoryWarning {
+	// Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+	
+	// Release any cached data, images, etc that aren't in use.
+}
+
+
 - (void)dealloc {
     [super dealloc];
 }
 
+
+
+
+/*
+ // The designated initializer. Override to perform setup that is required before the view is loaded.
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+ if (self) {
+ // Custom initialization
+ }
+ return self;
+ }
+ */
+
+/*
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView {
+ }*/
+
+
+
+
+//Used for a check for the popup
+    
+	
+    //int k;
+    
+    /*for(k=0;k<4;k++)
+    {
+        if(Stacks[k].center.x >=666 && Stacks[k].center.y<160 && Stacks[k].center.y > 618)
+        {
+             Stacks[k].center = CGPointMake(pennyX + centering, pennyY + centering);
+            [Stacks[k] removeFromSuperview];
+		    [Stacks[k] release];
+		    [Coins removeLastObject];
+        }
+            
+    }*/
 @end

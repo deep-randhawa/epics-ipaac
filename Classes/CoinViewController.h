@@ -33,8 +33,6 @@
 	int oldNumCoins;
 }
 
-@property (nonatomic,retain) IBOutlet UIButton *Refresh;
-
 -(IBAction) coinRefresh;
 -(IBAction) unlockButton;
 -(IBAction) buyButton;
