@@ -138,7 +138,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Classes/PlayCoinItemSelect.m"
@@ -174,16 +174,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             symbolName = "*0x01ddda97">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_objc_opt_data"
-                  moduleName = "libobjc.A.dylib"
-                  offsetFromSymbolStart = "1288551">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -208,7 +198,7 @@
                   symbolName = "-[CreateActivityViewController imageController]"
                   moduleName = "BUYit!"
                   urlString = "file:///Users/epics/Desktop/epics-ipaac/Classes/CreateActivityViewController.h"
-                  timestampString = "417326794.158942"
+                  timestampString = "417468480.391687"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "81"
@@ -222,7 +212,7 @@
                   symbolName = "-[CreateActivityViewController setImageController:]"
                   moduleName = "BUYit!"
                   urlString = "file:///Users/epics/Desktop/epics-ipaac/Classes/CreateActivityViewController.h"
-                  timestampString = "417326794.159277"
+                  timestampString = "417468480.391981"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "81"
@@ -254,7 +244,7 @@
                   symbolName = "-[CreateActivityViewController imageController]"
                   moduleName = "BUYit!"
                   urlString = "file:///Users/epics/Desktop/epics-ipaac/Classes/CreateActivityViewController.h"
-                  timestampString = "417326794.159602"
+                  timestampString = "417468480.392261"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "81"
@@ -268,7 +258,7 @@
                   symbolName = "-[CreateActivityViewController setImageController:]"
                   moduleName = "BUYit!"
                   urlString = "file:///Users/epics/Desktop/epics-ipaac/Classes/CreateActivityViewController.h"
-                  timestampString = "417326794.159869"
+                  timestampString = "417468480.392517"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "81"
@@ -291,6 +281,22 @@
             startingLineNumber = "249"
             endingLineNumber = "249"
             landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Classes/CoinViewController.m"
+            timestampString = "417468377.939861"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "-viewDidUnload"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

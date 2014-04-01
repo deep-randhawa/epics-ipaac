@@ -20,14 +20,12 @@
 //spawn point, top-left pixel + center adjust
 
 @implementation CoinViewController
-
 - (IBAction) unlockButton {
 	[[self navigationController] setNavigationBarHidden:YES animated:YES];
 	[self.navigationController popViewControllerAnimated:YES];
 }
 
-
-//Needs to be reworked
+//Needs to be reworked for better feedback
 - (IBAction) buyButton {//Compare sum with priceCompare
 	if (sum == priceCompare){// && oldNumCoins != numCoins){
 		UIAlertView *win = [[UIAlertView alloc] initWithTitle:@"Item Purchased" 
@@ -114,18 +112,22 @@
 
 -(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     
+    //causing an error
+    
     NSSet *allTouches = [event allTouches];
+    
     if([allTouches count]) {
     
         UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
         CGPoint location = [touch locationInView:self.view];
     
-        if(j != -1){
+        if(j != -1 && dragBusy != -1){
             [[Coins objectAtIndex:dragBusy] getIview].center = location;
-        }else{
+        }else if(dragBusy != -1){
             Stacks[dragBusy].center = location;
         }
     }
+    
 }
 
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -184,8 +186,7 @@
 	
 	}
 
-
-- (void) stackRefresh{
+-(void) stackRefresh{
     
 	Stacks[0].center = CGPointMake(pennyX + centering, pennyY + centering);
 	Stacks[1].center = CGPointMake(nickelX + centering, nickelY + centering);
@@ -195,7 +196,7 @@
 	NSLog(@"\ncoin count = %d\n",[Coins count]);
 }
 
-- (IBAction) coinRefresh{
+-(IBAction) coinRefresh{
 	
 	while ([Coins count]>0) // should look for less itterative approach
 	{
@@ -208,10 +209,7 @@
 	NSLog(@"reset coins");
 }
 
-
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
+-(void)viewDidLoad{
     
     i = 0;
     
@@ -268,7 +266,9 @@
     [super viewDidLoad];
 }
 
-- (void)viewDidUnload {
+
+
+-(void)viewDidUnload {
 	for(i = 0;i<4;i++){
 		[Stacks[i] release];
 	}
@@ -281,13 +281,9 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
-
-
-
 // Override to allow orientations other than the default portrait orientation.
 //for ios6 orientation
-
-- (BOOL)shouldAutorotate {
+-(BOOL)shouldAutorotate {
     
     UIInterfaceOrientation orientation = [[UIDevice currentDevice] orientation];
     
@@ -301,12 +297,8 @@
     
     return NO;
 }
-
-
-
 //for ios5 orientation
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     
     //interfaceOrientation == UIInterfaceOrientationLandscapeRight;
     
@@ -317,56 +309,14 @@
     
     return NO;
 }
-
-
-- (void)didReceiveMemoryWarning {
+-(void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.
 }
 
-
-- (void)dealloc {
+-(void)dealloc {
     [super dealloc];
 }
-
-
-
-
-/*
- // The designated initializer. Override to perform setup that is required before the view is loaded.
- - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
- self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
- if (self) {
- // Custom initialization
- }
- return self;
- }
- */
-
-/*
- // Implement loadView to create a view hierarchy programmatically, without using a nib.
- - (void)loadView {
- }*/
-
-
-
-
-//Used for a check for the popup
-    
-	
-    //int k;
-    
-    /*for(k=0;k<4;k++)
-    {
-        if(Stacks[k].center.x >=666 && Stacks[k].center.y<160 && Stacks[k].center.y > 618)
-        {
-             Stacks[k].center = CGPointMake(pennyX + centering, pennyY + centering);
-            [Stacks[k] removeFromSuperview];
-		    [Stacks[k] release];
-		    [Coins removeLastObject];
-        }
-            
-    }*/
 @end
