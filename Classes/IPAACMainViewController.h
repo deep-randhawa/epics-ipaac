@@ -27,7 +27,7 @@ Now that we have initialized our navController and pushed our main controller vi
 
 //Initialize the function that will navigate to the Activity Sheet Studio page
 -(IBAction)goToActivitySheetStudio:(id)sender;
--(IBAction)goToWebsite:(id)sender;
+-(IBAction)gotoWebsite:(id)sender;
 -(IBAction)gotoContactUs:(id)sender;
 
 //Initialize the function which presents a popover with info about IPAAC

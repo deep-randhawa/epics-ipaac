@@ -31,7 +31,7 @@
 
 - (NSString *) getDBPath;
 
--(IBAction)unlockButton;
+- (IBAction)unlockButton;
 
 
 @end
