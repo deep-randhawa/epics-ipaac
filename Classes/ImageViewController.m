@@ -101,7 +101,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-	NSLog(@"listofImages count: %d",[listOfImages count]);
+	NSLog(@"listofImages count: %lu",(unsigned long)[listOfImages count]);
     return [listOfImages count];//added the count of the items in the array
 }
 

@@ -72,7 +72,7 @@
 	item_price = price;
 	NSLog(@"selected_sheet: %@",selected_item);
 	NSLog(@"price: %@",item_price);
-	int length = [item_price length];
+	int length = (int)[item_price length];
 	NSString *priceStr; 
 	priceStr = [item_price substringWithRange: NSMakeRange(1, length-1)];
 	priceCompare = [priceStr floatValue];
@@ -193,7 +193,7 @@
 	Stacks[2].center = CGPointMake(dimeX + centering, dimeY + centering);
 	Stacks[3].center = CGPointMake(quarterX + centering, quarterY + centering);
 	
-	NSLog(@"\ncoin count = %d\n",[Coins count]);
+	NSLog(@"\ncoin count = %lu\n",(unsigned long)[Coins count]);
 }
 
 -(IBAction) coinRefresh{

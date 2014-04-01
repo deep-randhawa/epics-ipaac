@@ -801,7 +801,7 @@ static sqlite3 *database = nil;
 	size1.width=310;
 	size1.height=100;
 	appDelegate.viewController.currentButton = (UIButton *)sender;
-	tempID = appDelegate.viewController.currentButton.tag;
+	tempID = (int)appDelegate.viewController.currentButton.tag;
 	
 	UIViewController *choices = [[UIViewController alloc] init];
 	//-----Images Button----
@@ -859,7 +859,7 @@ static sqlite3 *database = nil;
 	size2.width=320;
 	size2.height=484;
 	//appDelegate.viewController.currentButton = (UIButton *)sender;
-	tempID = appDelegate.viewController.currentButton.tag;
+	tempID = (int)appDelegate.viewController.currentButton.tag;
 	NSLog(@"currentButton tag (ROUND1): %d",tempID);
 	
 	
@@ -1037,7 +1037,7 @@ static sqlite3 *database = nil;
 	IPAACAppDelegate *appDelegate = 
 	[[UIApplication sharedApplication] delegate];
 	
-	tempID = appDelegate.viewController.currentButton.tag;
+	tempID = (int)appDelegate.viewController.currentButton.tag;
 	
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory , NSUserDomainMask, YES);
 	NSString *documentsDir = [paths objectAtIndex:0];
@@ -1085,7 +1085,7 @@ static sqlite3 *database = nil;
 	
 	IPAACAppDelegate *appDelegate = 
 	[[UIApplication sharedApplication] delegate];
-	tempID = appDelegate.viewController.currentButton.tag;
+	tempID = (int)appDelegate.viewController.currentButton.tag;
 	
 	NSString *tempStr = [detailAudio description];
 	NSArray *temp = [tempStr componentsSeparatedByString:@"."];

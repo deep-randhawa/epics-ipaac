@@ -192,7 +192,7 @@ static sqlite3 *database = nil;
     
 	
     // Configure the cell...
-	NSLog(@"count = %d",[fileArray count]);
+	NSLog(@"count = %lu",(unsigned long)[fileArray count]);
 	NSLog(@"%@",[fileArray objectAtIndex:indexPath.row]);
 	
 	cell.textLabel.text = [fileArray objectAtIndex:indexPath.row];

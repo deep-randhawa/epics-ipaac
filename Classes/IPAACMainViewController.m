@@ -311,7 +311,7 @@
 	{
 		NSArray *components = [s componentsSeparatedByString:@"."];
 		NSInteger cnt = [components count];
-		NSLog(@"%@ with count %d",components, cnt);
+		NSLog(@"%@ with count %ld",components, (long)cnt);
 		//NSLog(@"%d",cnt);
 		NSString *demoFile = [NSString stringWithFormat:@"%@/%@", documentsDirectory,s];
 		NSString *demoFileMovedImages = [NSString stringWithFormat:@"%@/images/%@", documentsDirectory,s];
